@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(135deg, #556B2F, #FFB347, #8B4513);
+    font-family: 'Playfair Display', serif;
+    color: #333;  /* Fall-inspired color for text */
+    min-height: 100vh;  /* Ensure background covers the entire height */
+    margin: 0;
+    padding: 0;
+}
+
+.todo-container {
+    max-width: 400px;
+    margin: 50px auto;  /* Adds spacing from the top */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);  /* Slight transparency to let background peek through */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #556B2F !important;  /* Olive green for the title */
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Override Bootstrap button styles for Add Task */
+.btn-custom {
+    background-color: #556B2F !important;  /* Olive green for Add Task button */
+    color: white !important;
+    border: none !important;
+}
+
+.btn-custom:hover {
+    background-color: #4e9e29 !important;  /* Darker olive green on hover */
+}
+
+/* Override Bootstrap button styles for Delete button */
+.btn-danger {
+    background-color: #556B2F;  /* Olive green for Delete button */
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #4e9e29;  /* Darker olive green on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;  /* Strike-through for completed tasks */
+    color: gray;  /* Optional: Change text color for completed tasks */
+}
+
+.full-height {
+    height: 100vh; /* Full viewport height */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .todo-container {
+        max-width: 100%;  /* Full width on mobile */
+        margin: 20px;     /* Reduced margin */
+        padding: 15px;    /* Reduced padding */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .btn-custom, .btn-danger {
+        width: 100%; /* Full width for buttons */
+        margin-top: 10px; /* Space between buttons */
+    }
+
+    #task-list {
+        padding: 0; /* Remove padding on task list */
+    }
+}

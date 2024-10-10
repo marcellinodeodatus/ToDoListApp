@@ -1,0 +1,1 @@
+{"user@example.com": {"username": "exampleuser", "password": "$2b$12$OJx5.Z7lC8P/4.qpTFZ1h.BiTBrCmAkdoA.bZWRHzEtcl/nTx0Kkm"}, "admin@example.com": {"username": "admin", "password": "$2b$12$OJx5.Z7lC8P/4.qpTFZ1h.BiTBrCmAkdoA.bZWRHzEtcl/nTx0Kkm"}, "test@example.com": {"username": "deo", "password": "$2b$12$b4s6gVStwSdjveqrAAlJn.dR1lIF0XSZddf5AJryoFuYq1LCqHsje"}}
